@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #16140f;
+  --color-ink: #000000;
+  --color-accent: #eb533c;
+  --color-accent-link: #ff7a5c;
+  --color-secondary: #d9a53c;
+  --color-text: #f2ede4;
+  --color-surface: #faf7f1;
+  --font-display: var(--font-exo-2);
+  --font-sans: var(--font-inter);
+  --radius-brand: 12px 24px 12px 24px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Replicates Container's (mx-auto max-w-7xl px-6/8/12) computed left inset, so a full-viewport-width
+ * element can align its first child with Container content above/below it without capping its own
+ * width — used by the onboarding timeline's horizontal-scroll gallery.
+ */
+:root {
+  --container-px: 1.5rem;
+}
+@media (min-width: 640px) {
+  :root {
+    --container-px: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --container-px: 3rem;
+  }
+}
+.container-aligned-inset {
+  padding-left: max(var(--container-px), calc((100vw - 80rem) / 2 + var(--container-px)));
+}
+
+@keyframes wave-dot-a {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes wave-dot-b {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes hotspot-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave-dot,
+  .hotspot-pulse {
+    animation: none !important;
+  }
+}

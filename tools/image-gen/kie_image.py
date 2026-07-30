@@ -15,7 +15,7 @@ import requests
 DOWNLOAD_HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 API_BASE = "https://api.kie.ai/api/v1"
-UPLOAD_URL = "https://api.kie.ai/api/file-base64-upload"
+UPLOAD_URL = "https://kieai.redpandaai.co/api/file-base64-upload"
 GENERATE_URL = f"{API_BASE}/gpt4o-image/generate"
 STATUS_URL = f"{API_BASE}/gpt4o-image/record-info"
 

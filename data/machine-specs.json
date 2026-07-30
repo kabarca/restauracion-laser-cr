@@ -1,0 +1,20 @@
+[
+  { "id": "modelo", "label": "Modelo", "value": "UC-P3 Pulse Laser Cleaning Machine", "valueEn": "UC-P3 Pulse Laser Cleaning Machine" },
+  { "id": "potencia-laser", "label": "Potencia del láser", "value": "300W", "valueEn": "300W" },
+  { "id": "fuente-laser", "label": "Fuente láser", "value": "Módulo láser pulsado de 300W, personalizado para Restauración Láser", "valueEn": "300W pulsed laser module, custom-built for Restauración Láser" },
+  { "id": "sistema-control", "label": "Sistema de control", "value": "Sistema de control de limpieza propietario Restauración Láser", "valueEn": "Restauración Láser proprietary cleaning control system" },
+  { "id": "interfaz-fibra-optica", "label": "Interfaz de fibra óptica", "value": "QCS", "valueEn": "QCS" },
+  { "id": "sistema-enfriamiento", "label": "Sistema de enfriamiento", "value": "Enfriamiento por aire", "valueEn": "Air cooling" },
+  { "id": "longitud-onda", "label": "Longitud de onda", "value": "1050–1090nm", "valueEn": "1050–1090nm" },
+  { "id": "potencia-nominal", "label": "Potencia nominal", "value": "≤1000W", "valueEn": "≤1000W" },
+  { "id": "lente-campo", "label": "Lente de campo", "value": "F254 (opcional: F210/F300)", "valueEn": "F254 (optional: F210/F300)" },
+  { "id": "ancho-escaneo", "label": "Ancho de escaneo", "value": "130×130mm", "valueEn": "130×130mm" },
+  { "id": "eficiencia-limpieza", "label": "Eficiencia de limpieza", "value": "0.08–8 m²/min", "valueEn": "0.08–8 m²/min" },
+  { "id": "velocidad-escaneo", "label": "Velocidad de escaneo", "value": "<30,000mm/s", "valueEn": "<30,000mm/s" },
+  { "id": "presion-aire-auxiliar", "label": "Presión de aire auxiliar", "value": "≥0.5–0.8 MPa", "valueEn": "≥0.5–0.8 MPa" },
+  { "id": "modos-limpieza", "label": "Modos de limpieza", "value": "Línea recta, rectángulo, elipse, onda, pétalo, espiral, cuadrícula, forma de 8", "valueEn": "Straight line, rectangle, ellipse, wave, petal, spiral, grid, figure-8" },
+  { "id": "idiomas-soportados", "label": "Idiomas soportados", "value": "15", "valueEn": "15" },
+  { "id": "suministro-electrico", "label": "Suministro eléctrico", "value": "±15V / 3A", "valueEn": "±15V / 3A" },
+  { "id": "voltaje-trabajo", "label": "Voltaje de trabajo", "value": "220V, 1 fase, 60Hz", "valueEn": "220V, 1 phase, 60Hz" },
+  { "id": "temperatura-operacion", "label": "Temperatura de operación", "value": "-15°C a +65°C", "valueEn": "-15°C to +65°C" }
+]

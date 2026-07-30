@@ -1,0 +1,37 @@
+[
+  {
+    "id": "aplicacion-y-aprobacion",
+    "order": 1,
+    "title": "Aplicación y aprobación",
+    "duration": "Días 1–3",
+    "description": "El prospecto elige territorio (ver tablero de disponibilidad) y aplica vía el formulario de franquicias."
+  },
+  {
+    "id": "firma-y-pago-inicial",
+    "order": 2,
+    "title": "Firma y pago inicial",
+    "duration": "Semana 1",
+    "description": "Inversión inicial de $19,500 USD."
+  },
+  {
+    "id": "produccion-envio-y-capacitacion",
+    "order": 3,
+    "title": "Producción, envío y capacitación",
+    "duration": "~1 mes",
+    "description": "Mientras se produce y transporta el equipo internacionalmente, el franquiciado recibe 24 horas de capacitación práctica (incl. certificación de seguridad Clase IV) y acceso inmediato a la base de conocimientos."
+  },
+  {
+    "id": "entrega-e-instalacion",
+    "order": 4,
+    "title": "Entrega e instalación",
+    "duration": "Semana 4",
+    "description": "Llega el equipo de marca propia Restauración Láser, listo para operar."
+  },
+  {
+    "id": "lanzamiento-oficial",
+    "order": 5,
+    "title": "Lanzamiento oficial",
+    "duration": "Mes 1+",
+    "description": "Apertura con generación de leads de su zona, soporte continuo y acceso a la comunidad de operadores."
+  }
+]

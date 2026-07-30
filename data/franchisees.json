@@ -1,0 +1,44 @@
+[
+  {
+    "id": "crc-santa-ana",
+    "countryCode": "crc",
+    "countryName": "Costa Rica",
+    "citySlug": "santa-ana",
+    "cityName": "Santa Ana",
+    "status": "activo",
+    "isHeadquarters": true,
+    "geo": { "lat": 9.9372, "lng": -84.2119 },
+    "address": "Lindora, Santa Ana, San José, Costa Rica",
+    "whatsapp": "+50689019811",
+    "email": null,
+    "serviceArea": ["Escazú", "Santa Ana", "Mora", "Ciudad Colón", "Puriscal", "Guácima"],
+    "description": "Sede central de Restauración Láser: el equipo de operación e instalación técnica que atiende el Oeste del Valle Central, desde limpieza de óxido y pintura hasta restauración de fachadas patrimoniales.",
+    "heroImagePlaceholderId": "franchisee-santa-ana-hero",
+    "gallery": [
+      "franchisee-santa-ana-gallery-1",
+      "franchisee-santa-ana-gallery-2",
+      "franchisee-santa-ana-gallery-3"
+    ]
+  },
+  {
+    "id": "crc-curridabat",
+    "countryCode": "crc",
+    "countryName": "Costa Rica",
+    "citySlug": "curridabat",
+    "cityName": "Curridabat",
+    "status": "activo",
+    "isHeadquarters": false,
+    "geo": { "lat": 9.9153, "lng": -84.033 },
+    "address": "Curridabat, San José, Costa Rica",
+    "whatsapp": null,
+    "email": null,
+    "serviceArea": ["Curridabat", "Tres Ríos", "Montes de Oca", "San Pedro", "Guadalupe", "Moravia", "Tibás"],
+    "description": "Franquicia Restauración Láser para el Este del Valle Central, con cobertura de San Pedro a Tres Ríos: limpieza industrial, remoción de grafiti y proyectos de restauración para negocios y propiedades residenciales.",
+    "heroImagePlaceholderId": "franchisee-curridabat-hero",
+    "gallery": [
+      "franchisee-curridabat-gallery-1",
+      "franchisee-curridabat-gallery-2",
+      "franchisee-curridabat-gallery-3"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "que-es-limpieza-laser",
+    "category": "general",
+    "question": "¿Qué es la limpieza láser?",
+    "answer": "Es una tecnología que usa pulsos de luz láser para vaporizar óxido, pintura, grasa u otros contaminantes de una superficie sin contacto físico, sin abrasivos y sin químicos, dejando el material base intacto."
+  },
+  {
+    "id": "es-seguro-el-laser",
+    "category": "general",
+    "question": "¿Es segura la limpieza láser para el material y las personas?",
+    "answer": "Sí. Nuestros operadores están certificados en seguridad láser Clase IV y siguen protocolos estrictos de protección ocular y de área de trabajo. El proceso no daña el material base cuando se calibra correctamente."
+  },
+  {
+    "id": "cotizacion-como-funciona",
+    "category": "general",
+    "question": "¿Cómo solicito una cotización?",
+    "answer": "Escríbenos por WhatsApp con fotos de la superficie a tratar y el tamaño aproximado del área. Te respondemos con un estimado y, si aplica, coordinamos una visita técnica."
+  },
+  {
+    "id": "servicios-tipos-superficie",
+    "category": "servicios",
+    "question": "¿En qué tipos de superficie funciona la limpieza láser?",
+    "answer": "Funciona en metal, piedra, concreto, madera y la mayoría de sustratos rígidos. Antes de cada proyecto evaluamos el material para confirmar que el láser es el método adecuado."
+  },
+  {
+    "id": "servicios-tiempo-proyecto",
+    "category": "servicios",
+    "question": "¿Cuánto tiempo toma un proyecto de limpieza láser?",
+    "answer": "Depende del área y el tipo de contaminante — un panel pequeño puede tomar minutos, mientras que una fachada completa puede tomar uno o varios días. Incluimos un estimado de tiempo en cada cotización."
+  },
+  {
+    "id": "servicios-residuo",
+    "category": "servicios",
+    "question": "¿La limpieza láser genera residuos o polvo?",
+    "answer": "Genera una cantidad mínima de residuo particulado, capturado con extracción localizada — a diferencia del sandblasting, no hay arena ni químicos que limpiar después."
+  },
+  {
+    "id": "franquicias-inversion",
+    "category": "franquicias",
+    "question": "¿Cuál es la inversión inicial de una franquicia Restauración Láser?",
+    "answer": "La franquicia completa tiene una inversión desde $19,500 USD más $550 USD mensuales, e incluye el equipo de marca propia, capacitación, certificación y soporte continuo. Territorios de alta demanda pueden tener un ajuste sobre el precio base."
+  },
+  {
+    "id": "franquicias-tiempo-apertura",
+    "category": "franquicias",
+    "question": "¿Cuánto tiempo toma abrir mi franquicia?",
+    "answer": "El proceso completo toma aproximadamente 1 mes. Mientras se produce y transporta el equipo internacionalmente, recibes 24 horas de capacitación práctica (incluyendo certificación de seguridad Clase IV) y acceso inmediato a la base de conocimientos, así que no esperas sin avanzar."
+  },
+  {
+    "id": "franquicias-territorio",
+    "category": "franquicias",
+    "question": "¿Qué significa la exclusividad de territorio?",
+    "answer": "Cada franquiciado opera en una zona exclusiva de Costa Rica. Dicho esto, tenemos identificadas zonas en las que hay espacio suficiente para 2 franquiciados como la zona del Oeste de San José o las playas de Guanacaste. En estos casos estaremos analizando tener más de una opción para la demanda que se tenga."
+  },
+  {
+    "id": "franquicias-experiencia-previa",
+    "category": "franquicias",
+    "question": "¿Necesito experiencia previa en limpieza industrial?",
+    "answer": "Sí. El equipo es relativamente fácil de operar pero conocimiento en diferentes materiales como tipos de maderas, humedad de las mismas, oxidación de los metales o inclusive aplicación de acabados en cemento hacen que las pruebas en diferentes condiciones sea más rápida y con menos experimentación."
+  }
+]

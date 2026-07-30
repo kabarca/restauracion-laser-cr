@@ -1,0 +1,47 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Marco Jiménez",
+    "role": "cliente",
+    "location": "Escazú, San José",
+    "franchiseeId": null,
+    "quote": "Teníamos óxido avanzado en la estructura metálica del portón y quedó como nueva, sin rayones ni residuo de químicos por ningún lado.",
+    "avatarPlaceholderId": "testimonial-1-avatar"
+  },
+  {
+    "id": "testimonial-2",
+    "name": "Sofía Ramírez",
+    "role": "cliente",
+    "location": "Tres Ríos, Cartago",
+    "franchiseeId": null,
+    "quote": "El piso de teca de la terraza tenía manchas de humedad y el barniz completamente opaco — quedó con el color original de la madera, sin necesidad de lijar.",
+    "avatarPlaceholderId": "testimonial-2-avatar"
+  },
+  {
+    "id": "testimonial-3",
+    "name": "Andrés Solano",
+    "role": "cliente",
+    "location": "Cartago",
+    "franchiseeId": null,
+    "quote": "Limpiaron moldes de inyección de la planta sin desmontarlos por completo — la precisión y el tiempo de respuesta fueron mucho mejores de lo que esperábamos.",
+    "avatarPlaceholderId": "testimonial-3-avatar"
+  },
+  {
+    "id": "testimonial-4",
+    "name": "Karina Vargas",
+    "role": "cliente",
+    "location": "Barrio Escalante, San José",
+    "franchiseeId": null,
+    "quote": "Le habían hecho grafiti a la fachada del local dos veces en el mismo mes — la limpiaron sin dañar la pintura ni dejar sombra del rayado anterior.",
+    "avatarPlaceholderId": "testimonial-4-avatar"
+  },
+  {
+    "id": "testimonial-5",
+    "name": "Luis Fernando Araya",
+    "role": "cliente",
+    "location": "San Rafael, Heredia",
+    "franchiseeId": null,
+    "quote": "La chimenea de la casa tenía hollín acumulado de años de uso y pensé que había que reemplazar la piedra — la dejaron como el día que la instalaron.",
+    "avatarPlaceholderId": "testimonial-5-avatar"
+  }
+]

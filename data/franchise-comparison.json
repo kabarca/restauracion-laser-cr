@@ -1,0 +1,14 @@
+[
+  { "feature": "Láser pulsado 300W", "equipo": true, "franquicia": true },
+  { "feature": "Soporte local", "equipo": false, "franquicia": true },
+  { "feature": "Garantía", "equipo": "Garantía de fábrica", "franquicia": "Garantía extendida + soporte prioritario" },
+  { "feature": "Lentes de repuesto", "equipo": false, "franquicia": true },
+  { "feature": "Biblioteca de presets", "equipo": false, "franquicia": true },
+  { "feature": "Capacitación y certificación Clase IV", "equipo": false, "franquicia": true },
+  { "feature": "Base de conocimientos", "equipo": false, "franquicia": true },
+  { "feature": "Comunidad privada de operadores", "equipo": false, "franquicia": true },
+  { "feature": "Exclusividad de territorio", "equipo": false, "franquicia": true },
+  { "feature": "Motor de leads", "equipo": false, "franquicia": true },
+  { "feature": "Oportunidades B2B", "equipo": false, "franquicia": true },
+  { "feature": "Correo corporativo", "equipo": false, "franquicia": true }
+]

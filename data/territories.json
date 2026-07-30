@@ -1,0 +1,66 @@
+[
+  {
+    "id": "oeste-de-oro",
+    "countryCode": "crc",
+    "name": "Oeste de Oro",
+    "regions": ["Escazú", "Santa Ana", "Mora", "Ciudad Colón", "Puriscal", "Guácima"],
+    "status": "reservado",
+    "franchiseeId": "crc-santa-ana"
+  },
+  {
+    "id": "heredia-tec-y-belen",
+    "countryCode": "crc",
+    "name": "Heredia Tec & Belén",
+    "regions": ["Belén", "San Joaquín de Flores", "San Rafael", "Santo Domingo"],
+    "status": "disponible",
+    "franchiseeId": null
+  },
+  {
+    "id": "este-de-lujo",
+    "countryCode": "crc",
+    "name": "Este de Lujo",
+    "regions": ["Curridabat", "Tres Ríos", "Montes de Oca", "San Pedro", "Guadalupe", "Moravia", "Tibás"],
+    "status": "reservado",
+    "franchiseeId": "crc-curridabat"
+  },
+  {
+    "id": "alajuela-zona-franca",
+    "countryCode": "crc",
+    "name": "Alajuela Zona Franca",
+    "regions": ["Alajuela Centro", "Coyol", "San Rafael", "Naranjo", "Palmares", "San Ramón"],
+    "status": "disponible",
+    "franchiseeId": null
+  },
+  {
+    "id": "cartago-industrial-y-agricola",
+    "countryCode": "crc",
+    "name": "Cartago Industrial & Agrícola",
+    "regions": ["Cartago Centro", "El Guarco", "Paraíso", "La Lima"],
+    "status": "disponible",
+    "franchiseeId": null
+  },
+  {
+    "id": "guanacaste-gold-coast",
+    "countryCode": "crc",
+    "name": "Guanacaste Gold Coast",
+    "regions": ["Liberia", "Papagayo", "Tamarindo", "Las Catalinas", "Flamingo", "Nosara", "Santa Teresa"],
+    "status": "disponible",
+    "franchiseeId": null
+  },
+  {
+    "id": "pacifico-central",
+    "countryCode": "crc",
+    "name": "Pacífico Central",
+    "regions": ["Jacó", "Herradura", "Quepos", "Manuel Antonio"],
+    "status": "disponible",
+    "franchiseeId": null
+  },
+  {
+    "id": "internacional-latam",
+    "countryCode": "lat",
+    "name": "Internacional",
+    "regions": ["Países de Latinoamérica — una concesión por país"],
+    "status": "disponible",
+    "franchiseeId": null
+  }
+]

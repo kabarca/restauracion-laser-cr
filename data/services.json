@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "remocion-de-oxido",
+    "name": "Remoción de óxido",
+    "shortDescription": "Eliminamos corrosión de metal sin dañar la superficie base.",
+    "description": "Nuestra tecnología láser elimina el óxido capa por capa hasta dejar el metal base intacto y listo para pintar o proteger, sin abrasivos, sin químicos y sin generar residuo secundario que haya que desechar.",
+    "icon": "rust",
+    "keywords": ["remoción de óxido", "limpieza de metal", "corrosión", "restauración de metal", "óxido industrial"],
+    "beforeAfterPlaceholderId": "service-oxido-before-after"
+  },
+  {
+    "slug": "remocion-de-pintura-y-recubrimientos",
+    "name": "Remoción de pintura y recubrimientos",
+    "shortDescription": "Despojamos pintura, barniz o recubrimientos industriales capa por capa.",
+    "description": "El láser vaporiza pintura y recubrimientos con precisión milimétrica, ideal para preparar superficies antes de repintar, restaurar piezas históricas o remover recubrimientos industriales sin dañar el sustrato.",
+    "icon": "paint-coatings",
+    "keywords": ["remoción de pintura", "decapado láser", "recubrimientos industriales", "preparación de superficies"],
+    "beforeAfterPlaceholderId": "service-pintura-before-after"
+  },
+  {
+    "slug": "remocion-de-grafiti",
+    "name": "Remoción de grafiti",
+    "shortDescription": "Restauramos fachadas y muros afectados por grafiti, sin dejar marcas.",
+    "description": "Limpiamos grafiti de fachadas, muros y monumentos sin abrasivos ni solventes agresivos, preservando el material original — ideal para propiedades comerciales, municipalidades y sitios patrimoniales.",
+    "icon": "graffiti",
+    "keywords": ["remoción de grafiti", "limpieza de fachadas", "vandalismo", "restauración de muros"],
+    "beforeAfterPlaceholderId": "service-grafiti-before-after"
+  },
+  {
+    "slug": "remocion-de-moho-y-biofilm",
+    "name": "Remoción de moho y biofilm",
+    "shortDescription": "Eliminamos moho, algas y biofilm de superficies exteriores.",
+    "description": "El calor localizado del láser elimina moho, algas y biofilm de superficies exteriores sin usar químicos que puedan filtrarse al suelo o dañar plantas y mascotas cercanas.",
+    "icon": "mold-biofilm",
+    "keywords": ["remoción de moho", "limpieza de biofilm", "algas en fachadas", "limpieza ecológica"],
+    "beforeAfterPlaceholderId": "service-moho-before-after"
+  },
+  {
+    "slug": "remocion-de-grasa-y-aceite",
+    "name": "Remoción de grasa y aceite",
+    "shortDescription": "Limpieza profunda de maquinaria y piezas industriales engrasadas.",
+    "description": "Ideal para talleres y plantas industriales: eliminamos grasa, aceite y residuos de producción acumulados en maquinaria sin desarmar el equipo ni detener la operación por largos periodos.",
+    "icon": "grease-oil",
+    "keywords": ["limpieza de maquinaria", "remoción de grasa", "mantenimiento industrial", "limpieza de aceite"],
+    "beforeAfterPlaceholderId": "service-grasa-before-after"
+  },
+  {
+    "slug": "limpieza-de-moldes-de-inyeccion",
+    "name": "Limpieza de moldes de inyección",
+    "shortDescription": "Restauramos moldes de inyección a su tolerancia original.",
+    "description": "Limpiamos moldes de inyección de plástico y metal sin desgastar la superficie de precisión, extendiendo su vida útil y devolviendo tolerancias exactas sin desmontaje completo del molde.",
+    "icon": "injection-molds",
+    "keywords": ["limpieza de moldes", "moldes de inyección", "mantenimiento de moldes", "precisión industrial"],
+    "beforeAfterPlaceholderId": "service-moldes-before-after"
+  },
+  {
+    "slug": "restauracion-de-madera-y-teca",
+    "name": "Restauración de madera y teca",
+    "shortDescription": "Devolvemos el color natural a la madera sin lijado agresivo.",
+    "description": "Removemos barniz envejecido, manchas y suciedad de madera y teca sin el desgaste que produce el lijado tradicional, preservando la veta y el color natural de la pieza.",
+    "icon": "wood-teak",
+    "keywords": ["restauración de madera", "limpieza de teca", "renovación de muebles", "mantenimiento de madera exterior"],
+    "beforeAfterPlaceholderId": "service-madera-before-after"
+  },
+  {
+    "slug": "remocion-de-hollin",
+    "name": "Remoción de hollín",
+    "shortDescription": "Limpiamos hollín de incendios y equipos de combustión.",
+    "description": "Eliminamos depósitos de hollín en superficies afectadas por incendios, chimeneas o equipos de combustión, restaurando el material subyacente sin abrasión mecánica.",
+    "icon": "soot",
+    "keywords": ["remoción de hollín", "limpieza post incendio", "restauración por fuego", "limpieza de chimeneas"],
+    "beforeAfterPlaceholderId": "service-hollin-before-after"
+  },
+  {
+    "slug": "restauracion-patrimonial",
+    "name": "Restauración patrimonial",
+    "shortDescription": "Conservación de piezas y edificios históricos con precisión milimétrica.",
+    "description": "Trabajamos con municipalidades, museos e instituciones para limpiar y conservar piezas, esculturas y fachadas históricas con un método sin contacto que no compromete el material original.",
+    "icon": "heritage-restoration",
+    "keywords": ["restauración patrimonial", "conservación histórica", "limpieza de esculturas", "restauración de monumentos"],
+    "beforeAfterPlaceholderId": "service-patrimonial-before-after"
+  }
+]
