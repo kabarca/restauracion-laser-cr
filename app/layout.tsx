@@ -35,9 +35,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // No `h-full` on <html>: it pins the root box to the viewport, which stops Lenis's
+  // ResizeObserver from ever seeing the page grow, so smooth scroll clamps short of the bottom.
   return (
-    <html lang="es" className={`${exo2.variable} ${inter.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col bg-bg text-text">
+    <html lang="es" className={`${exo2.variable} ${inter.variable} antialiased`} suppressHydrationWarning>
+      <body className="min-h-dvh flex flex-col bg-bg text-text">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-brand focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-surface"

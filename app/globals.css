@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* Keeps html/body at height:auto while Lenis is mounted — a fixed root height freezes
+   Lenis's content measurement and prevents scrolling to the bottom of the page. */
+@import "lenis/dist/lenis.css";
 
 @theme {
   --color-bg: #16140f;
