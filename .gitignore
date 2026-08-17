@@ -8,7 +8,12 @@
 /.claude/skills/
 /.agents/
 
-# python (tools/image-gen)
+# local-only image generation tool (kie.ai) — images are generated on the dev
+# machine, never at deploy time. its requirements.txt makes host build systems
+# auto-detect a python project and run a python build, which breaks deploys.
+/tools/
+
+# python
 **/.env
 __pycache__/
 *.pyc
