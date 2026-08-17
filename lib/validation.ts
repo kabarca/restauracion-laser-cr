@@ -92,7 +92,12 @@ export const contactFormSchema = z.object({
   email: z.string().email("Ingresá un correo válido"),
   phone: z.string().min(8, "Ingresá un número de teléfono válido"),
   message: z.string().min(10, "Contanos un poco más"),
-  honeypot: z.string().max(0).optional(),
+  /**
+   * Deliberately permissive: the route inspects this and fakes a success response
+   * so a bot never learns it was caught. Rejecting a filled trap here instead would
+   * return a validation error — which tells the bot exactly what tripped it.
+   */
+  honeypot: z.string().optional(),
 });
 
 export const franchiseApplicationSchema = z.object({
@@ -101,5 +106,6 @@ export const franchiseApplicationSchema = z.object({
   phone: z.string().min(8, "Ingresá un número de teléfono válido"),
   territorioDeInteres: z.string().min(1, "Seleccioná un territorio"),
   message: z.string().min(10, "Contanos un poco más sobre tu interés").optional().or(z.literal("")),
-  honeypot: z.string().max(0).optional(),
+  /** See the note on contactFormSchema.honeypot — the route, not the schema, handles the trap. */
+  honeypot: z.string().optional(),
 });
