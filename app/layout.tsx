@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SmoothScrollProvider } from "@/components/layout/SmoothScrollProvider";
 import { WhatsAppFloatingCTA } from "@/components/whatsapp/WhatsAppFloatingCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { organizationSchema } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/site-config";
 import "./globals.css";
@@ -47,6 +48,7 @@ export default function RootLayout({
           Saltar al contenido
         </a>
         <JsonLd data={organizationSchema()} />
+        <GoogleAnalytics />
         <SmoothScrollProvider>
           <Header />
           <div id="main-content" className="flex flex-1 flex-col">
