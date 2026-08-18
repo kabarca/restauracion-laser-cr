@@ -1,6 +1,10 @@
 export const SITE_NAME = "Restauración Láser";
 export const SITE_URL = "https://restauracionlaser.cr";
 
+/** GA4 measurement ID. Override per-environment with NEXT_PUBLIC_GA_MEASUREMENT_ID. */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-CR2PNVG94R";
+
 export const INSTAGRAM_URL = "https://www.instagram.com/restauracionlaser.cr/";
 export const FACEBOOK_URL = "https://www.facebook.com/restauracionlaser.cr/";
 
