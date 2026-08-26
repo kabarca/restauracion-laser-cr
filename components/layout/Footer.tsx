@@ -18,6 +18,7 @@ const FOOTER_NAV = [
   { href: "/franquicias", label: "Franquicias" },
   { href: "/sobre-nosotros", label: "Sobre Nosotros" },
   { href: "/contacto", label: "Contacto" },
+  { href: "/form/servicio", label: "Evaluar mi Proyecto" },
 ];
 
 const LEGAL_NAV = [

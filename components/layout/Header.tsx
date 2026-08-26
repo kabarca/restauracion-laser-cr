@@ -8,7 +8,6 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { cn } from "@/lib/utils";
 import { EASE_OUT_EXPO } from "@/lib/motion";
 import { MobileNav } from "@/components/layout/MobileNav";
-import { WhatsAppButton } from "@/components/whatsapp/WhatsAppButton";
 
 const NAV_LINKS = [
   { href: "/", label: "Inicio" },
@@ -61,7 +60,7 @@ export function Header() {
           </motion.div>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -75,10 +74,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-
-        <div className="hidden md:block">
-          <WhatsAppButton />
-        </div>
 
         <MobileNav links={NAV_LINKS} />
       </div>

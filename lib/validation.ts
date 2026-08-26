@@ -109,3 +109,22 @@ export const franchiseApplicationSchema = z.object({
   /** See the note on contactFormSchema.honeypot — the route, not the schema, handles the trap. */
   honeypot: z.string().optional(),
 });
+
+/** Field shape for the /form/servicio project-evaluation form (app/api/service-evaluation). */
+export const serviceEvaluationSchema = z.object({
+  name: z.string().min(2, "Ingresá tu nombre completo o el de tu empresa"),
+  location: z.string().min(3, "Contanos dónde se realizaría el trabajo"),
+  materialType: z.string().min(1, "Seleccioná el tipo de material"),
+  materialTypeOther: z.string().optional().or(z.literal("")),
+  surfaceCondition: z.string().min(1, "Seleccioná el estado de la superficie"),
+  coatingToRemove: z.array(z.string()).min(1, "Seleccioná al menos un tipo de revestimiento a remover"),
+  coatingOtherText: z.string().optional().or(z.literal("")),
+  paintAge: z.string().optional().or(z.literal("")),
+  coatingThickness: z.string().min(1, "Seleccioná el grosor aproximado"),
+  dimensions: z.string().min(1, "Contanos las dimensiones aproximadas"),
+  hasDetails: z.string().min(1, "Indicá si la superficie tiene relieves o detalles"),
+  electricalAccess: z.string().min(1, "Indicá si hay acceso a electricidad"),
+  ventilation: z.string().min(1, "Indicá si el área es ventilada"),
+  /** See the note on contactFormSchema.honeypot — deliberately permissive, the route handles the trap. */
+  honeypot: z.string().optional(),
+});
