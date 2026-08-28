@@ -1,8 +1,9 @@
 import { ImagePlaceholder } from "@/components/media/ImagePlaceholder";
 import { ButtonLink } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/whatsapp/WhatsAppButton";
-import { TestimonialScrollCard } from "@/components/home/TestimonialScrollCard";
-import { testimonials } from "@/lib/content";
+// Testimonios ocultos temporalmente (no borrar): se reactivará el carrusel más adelante.
+// import { TestimonialScrollCard } from "@/components/home/TestimonialScrollCard";
+// import { testimonials } from "@/lib/content";
 
 export function Hero() {
   return (
@@ -43,7 +44,7 @@ export function Hero() {
             className="absolute inset-0 h-full w-full"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-black/10" aria-hidden="true" />
-          <TestimonialScrollCard testimonials={testimonials} />
+          {/* Testimonios ocultos temporalmente (no borrar): <TestimonialScrollCard testimonials={testimonials} /> */}
         </div>
       </div>
     </section>
