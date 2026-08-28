@@ -110,6 +110,18 @@ export const franchiseApplicationSchema = z.object({
   honeypot: z.string().optional(),
 });
 
+/** Field shape for the /contrato acceptance form (app/api/contract). */
+export const contractAcceptanceSchema = z.object({
+  name: z.string().min(2, "Ingresá tu nombre completo"),
+  idNumber: z.string().min(5, "Ingresá tu número de cédula o NIT"),
+  email: z.string().email("Ingresá un correo válido"),
+  accepted: z
+    .union([z.literal("true"), z.literal("on")])
+    .refine((value) => value === "true" || value === "on", "Debés aceptar los términos para continuar"),
+  /** See the note on contactFormSchema.honeypot — deliberately permissive, the route handles the trap. */
+  honeypot: z.string().optional(),
+});
+
 /** Field shape for the /form/servicio project-evaluation form (app/api/service-evaluation). */
 export const serviceEvaluationSchema = z.object({
   name: z.string().min(2, "Ingresá tu nombre completo o el de tu empresa"),

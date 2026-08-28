@@ -19,6 +19,7 @@ const FOOTER_NAV = [
   { href: "/sobre-nosotros", label: "Sobre Nosotros" },
   { href: "/contacto", label: "Contacto" },
   { href: "/form/servicio", label: "Evaluar mi Proyecto" },
+  { href: "/contrato", label: "Contrato" },
 ];
 
 const LEGAL_NAV = [
