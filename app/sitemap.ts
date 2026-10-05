@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 import { franchisees } from "@/lib/content";
-import { SITE_URL } from "@/lib/site-config";
+import { FRANCHISES_ENABLED, SITE_URL } from "@/lib/site-config";
 
 const STATIC_ROUTES = [
   "",
   "/servicios",
   "/tecnologia",
-  "/franquicias",
+  ...(FRANCHISES_ENABLED ? ["/franquicias"] : []),
   "/sobre-nosotros",
   "/contacto",
   "/aviso-legal",
@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
   }));
 
-  const franchiseeEntries: MetadataRoute.Sitemap = franchisees.map((f) => ({
+  const franchiseeEntries: MetadataRoute.Sitemap = (FRANCHISES_ENABLED ? franchisees : []).map((f) => ({
     url: `${SITE_URL}/${f.countryCode}/${f.citySlug}`,
     lastModified,
   }));

@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -13,6 +14,7 @@ import { FranchiseApplicationForm } from "@/components/franchise/FranchiseApplic
 import { JsonLd } from "@/components/seo/JsonLd";
 import { franchisees, territories, getFaqsByCategory } from "@/lib/content";
 import { faqPageSchema, availableTerritoriesItemListSchema } from "@/lib/structured-data";
+import { FRANCHISES_ENABLED } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Franquicias de limpieza láser",
@@ -21,6 +23,8 @@ export const metadata: Metadata = {
 };
 
 export default function FranquiciasPage() {
+  if (!FRANCHISES_ENABLED) notFound();
+
   const faqs = getFaqsByCategory("franquicias");
 
   return (

@@ -5,7 +5,7 @@ import { WaveBackground } from "@/components/decor/WaveBackground";
 import { WhatsAppButton } from "@/components/whatsapp/WhatsAppButton";
 import { FacebookIcon } from "@/components/icons/FacebookIcon";
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
-import { FACEBOOK_URL, INSTAGRAM_URL, SITE_NAME } from "@/lib/site-config";
+import { FACEBOOK_URL, FRANCHISES_ENABLED, INSTAGRAM_URL, SITE_NAME } from "@/lib/site-config";
 
 const SOCIAL_LINKS = [
   { href: FACEBOOK_URL, label: "Facebook", Icon: FacebookIcon },
@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
 const FOOTER_NAV = [
   { href: "/servicios", label: "Servicios" },
   { href: "/tecnologia", label: "Tecnología" },
-  { href: "/franquicias", label: "Franquicias" },
+  ...(FRANCHISES_ENABLED ? [{ href: "/franquicias", label: "Franquicias" }] : []),
   { href: "/sobre-nosotros", label: "Sobre Nosotros" },
   { href: "/contacto", label: "Contacto" },
   { href: "/form/servicio", label: "Evaluar mi Proyecto" },
@@ -36,7 +36,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Image src="/logo/logo-full.png" alt={SITE_NAME} width={180} height={140} className="w-36 object-contain object-left" />
             <p className="max-w-xs text-sm text-text/70">
-              Limpieza láser profesional y franquicias en Costa Rica y Latinoamérica.
+              Limpieza láser profesional en Costa Rica.
             </p>
             <WhatsAppButton className="w-fit" />
             <div className="flex items-center gap-3">

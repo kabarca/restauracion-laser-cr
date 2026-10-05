@@ -23,9 +23,9 @@ export default function AvisoLegalPage() {
           <div>
             <h2 className="mb-2 text-xl font-bold">Objeto del sitio</h2>
             <p>
-              Este sitio tiene como finalidad informar sobre los servicios de limpieza láser industrial y
-              la oportunidad de franquicia de {SITE_NAME}, así como facilitar el contacto de clientes y
-              prospectos de franquicia a través de WhatsApp y formularios web.
+              Este sitio tiene como finalidad informar sobre los servicios de limpieza láser industrial de
+              {SITE_NAME}, así como facilitar el contacto de clientes a través de
+              WhatsApp y formularios web.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function AvisoLegalPage() {
             <p>
               La información publicada en este sitio tiene fines informativos y comerciales.{" "}
               {SITE_NAME} procura que la información sea exacta y esté actualizada, pero no garantiza la
-              ausencia de errores. Los precios, condiciones de franquicia y disponibilidad de territorios
+              ausencia de errores. Los precios, condiciones y disponibilidad de los servicios
               pueden variar — la información vigente será siempre la confirmada directamente con nuestro
               equipo.
             </p>

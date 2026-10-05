@@ -11,6 +11,12 @@ export const FACEBOOK_URL = "https://www.facebook.com/restauracionlaser.cr/";
 /** Site-wide WhatsApp line (Santa Ana / sede central) — every generic WhatsApp CTA goes through here. */
 export const WHATSAPP_NUMBER = "+50689019811";
 
+/**
+ * Franchise offering is paused. While false, every franchise page, link, form, and mention is
+ * hidden (the code and data stay in place). Flip to true to bring it all back.
+ */
+export const FRANCHISES_ENABLED = false;
+
 export const FRANCHISE_ENTRY_FEE_USD = 19_500;
 export const FRANCHISE_MONTHLY_FEE_USD = 550;
 

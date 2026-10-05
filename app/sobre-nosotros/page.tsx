@@ -4,12 +4,13 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { ImagePlaceholder } from "@/components/media/ImagePlaceholder";
 import { ButtonLink } from "@/components/ui/Button";
+import { FRANCHISES_ENABLED } from "@/lib/site-config";
 import { WhatsAppButton } from "@/components/whatsapp/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Sobre nosotros",
   description:
-    "Restauración Láser combina tecnología láser de marca propia con un modelo de franquicia pensado para Costa Rica y Latinoamérica.",
+    "Restauración Láser combina tecnología láser de marca propia con un servicio de restauración pensado para Costa Rica.",
 };
 
 const VALUES = [
@@ -21,10 +22,14 @@ const VALUES = [
     title: "Transparencia técnica",
     description: "Mostramos la ficha técnica real de nuestro equipo — no promesas vagas de marketing.",
   },
-  {
-    title: "Franquiciados, no solo clientes de equipo",
-    description: "Cada franquiciado recibe soporte continuo, no solo una máquina y un manual.",
-  },
+  ...(FRANCHISES_ENABLED
+    ? [
+        {
+          title: "Franquiciados, no solo clientes de equipo",
+          description: "Cada franquiciado recibe soporte continuo, no solo una máquina y un manual.",
+        },
+      ]
+    : []),
 ];
 
 export default function SobreNosotrosPage() {
@@ -82,8 +87,8 @@ export default function SobreNosotrosPage() {
 
       <section className="bg-secondary/5 py-24">
         <Container className="flex flex-col gap-14">
-          <SectionHeading eyebrow="Cómo trabajamos" title="Tres principios detrás de cada proyecto" />
-          <div className="grid gap-8 sm:grid-cols-3">
+          <SectionHeading eyebrow="Cómo trabajamos" title={`${VALUES.length === 3 ? "Tres" : "Dos"} principios detrás de cada proyecto`} />
+          <div className={`grid gap-8 ${VALUES.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
             {VALUES.map((value, i) => (
               <ScrollReveal key={value.title} variant="fade-up" delay={i * 0.1}>
                 <div className="flex flex-col gap-3">
@@ -101,9 +106,11 @@ export default function SobreNosotrosPage() {
           <h2 className="max-w-xl text-3xl font-bold sm:text-4xl">¿Querés conocer más sobre cómo trabajamos?</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <WhatsAppButton>Hablar por WhatsApp</WhatsAppButton>
-            <ButtonLink href="/franquicias" variant="outline">
-              Ver oportunidad de franquicia
-            </ButtonLink>
+            {FRANCHISES_ENABLED && (
+              <ButtonLink href="/franquicias" variant="outline">
+                Ver oportunidad de franquicia
+              </ButtonLink>
+            )}
           </div>
         </Container>
       </section>

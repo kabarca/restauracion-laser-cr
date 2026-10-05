@@ -1,11 +1,16 @@
 import { Container } from "@/components/ui/Container";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { services, franchisees, getCostaRicaTerritories } from "@/lib/content";
+import { FRANCHISES_ENABLED } from "@/lib/site-config";
 
 const STATS = [
   { value: `${services.length}`, label: "Servicios especializados" },
-  { value: `${franchisees.length}`, label: "Ubicaciones activas" },
-  { value: `${getCostaRicaTerritories().length}`, label: "Territorios en Costa Rica" },
+  ...(FRANCHISES_ENABLED
+    ? [
+        { value: `${franchisees.length}`, label: "Ubicaciones activas" },
+        { value: `${getCostaRicaTerritories().length}`, label: "Territorios en Costa Rica" },
+      ]
+    : []),
   { value: "300W", label: "Potencia del láser" },
 ];
 
@@ -13,7 +18,7 @@ export function StatsBar() {
   return (
     <section className="border-y border-text/10 bg-bg py-10">
       <Container>
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div className={`grid grid-cols-2 gap-8 ${STATS.length > 2 ? "sm:grid-cols-4" : "mx-auto max-w-md"}`}>
           {STATS.map((stat, i) => (
             <ScrollReveal key={stat.label} variant="fade-up" delay={i * 0.08}>
               <div className="text-center">

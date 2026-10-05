@@ -24,11 +24,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Restauración Láser — Limpieza láser industrial y franquicias en Costa Rica",
+    default: "Restauración Láser — Limpieza láser industrial en Costa Rica",
     template: "%s | Restauración Láser",
   },
   description:
-    "Limpieza láser profesional para óxido, pintura, grafiti y más — y la oportunidad de franquicia de limpieza láser líder en Costa Rica y Latinoamérica.",
+    "Limpieza láser profesional para óxido, pintura, grafiti y más, en todo Costa Rica.",
 };
 
 export default function RootLayout({

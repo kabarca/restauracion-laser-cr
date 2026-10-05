@@ -8,10 +8,11 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { franchisees, getFranchisee, testimonials } from "@/lib/content";
-import { WHATSAPP_NUMBER } from "@/lib/site-config";
+import { FRANCHISES_ENABLED, WHATSAPP_NUMBER } from "@/lib/site-config";
 import { localBusinessSchema, breadcrumbListSchema } from "@/lib/structured-data";
 
 export function generateStaticParams() {
+  if (!FRANCHISES_ENABLED) return [];
   return franchisees.map((f) => ({ pais: f.countryCode, ciudad: f.citySlug }));
 }
 
@@ -24,7 +25,7 @@ type FranchiseePageProps = {
 export async function generateMetadata({ params }: FranchiseePageProps): Promise<Metadata> {
   const { pais, ciudad } = await params;
   const franchisee = getFranchisee(pais, ciudad);
-  if (!franchisee) return {};
+  if (!FRANCHISES_ENABLED || !franchisee) return {};
 
   return {
     title: `Limpieza láser en ${franchisee.cityName}`,
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: FranchiseePageProps): Promise
 export default async function FranchiseePage({ params }: FranchiseePageProps) {
   const { pais, ciudad } = await params;
   const franchisee = getFranchisee(pais, ciudad);
-  if (!franchisee) notFound();
+  if (!FRANCHISES_ENABLED || !franchisee) notFound();
 
   const relatedTestimonials = testimonials.filter((t) => t.franchiseeId === franchisee.id);
   const whatsappNumber = franchisee.whatsapp ?? WHATSAPP_NUMBER;

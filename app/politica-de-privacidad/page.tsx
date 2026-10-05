@@ -24,17 +24,15 @@ export default function PoliticaDePrivacidadPage() {
           <div>
             <h2 className="mb-2 text-xl font-bold">Datos que recopilamos</h2>
             <p>
-              Cuando completás el formulario de contacto o de solicitud de franquicia recopilamos: nombre,
-              correo electrónico, teléfono y el contenido del mensaje que nos enviás — incluyendo, en el
-              caso de la solicitud de franquicia, el territorio de tu interés.
+              Cuando completás el formulario de contacto recopilamos: nombre, correo electrónico, teléfono
+              y el contenido del mensaje que nos enviás.
             </p>
           </div>
 
           <div>
             <h2 className="mb-2 text-xl font-bold">Finalidad del tratamiento</h2>
             <p>
-              Usamos estos datos exclusivamente para responder tu consulta, dar seguimiento a tu solicitud
-              de franquicia o coordinar un servicio. No vendemos ni compartimos tus datos con terceros con
+              Usamos estos datos exclusivamente para responder tu consulta, coordinar un servicio. No vendemos ni compartimos tus datos con terceros con
               fines publicitarios.
             </p>
           </div>

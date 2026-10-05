@@ -9,12 +9,13 @@ import { cn } from "@/lib/utils";
 import { EASE_OUT_EXPO } from "@/lib/motion";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
+import { FRANCHISES_ENABLED } from "@/lib/site-config";
 
 const NAV_LINKS = [
   { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
   { href: "/tecnologia", label: "Tecnología" },
-  { href: "/franquicias", label: "Franquicias" },
+  ...(FRANCHISES_ENABLED ? [{ href: "/franquicias", label: "Franquicias" }] : []),
   { href: "/sobre-nosotros", label: "Sobre Nosotros" },
   { href: "/contacto", label: "Contacto" },
 ];

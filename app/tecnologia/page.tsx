@@ -6,6 +6,7 @@ import { WaveDivider } from "@/components/decor/WaveDivider";
 import { ImagePlaceholder } from "@/components/media/ImagePlaceholder";
 import { LaserPhysicsDiagram, type PhysicsStep } from "@/components/tecnologia/LaserPhysicsDiagram";
 import { ButtonLink } from "@/components/ui/Button";
+import { FRANCHISES_ENABLED } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Tecnología",
@@ -77,9 +78,9 @@ export default function TecnologiaPage() {
             Nuestro equipo fue construido para las necesidades de Latinoamérica
           </h1>
           <p className="max-w-xl text-surface/80">
-            Cada máquina Restauración Láser sale de fábrica con nuestras especificaciones y presets —
-            la misma tecnología que operamos en nuestras sedes es la que reciben nuestros
-            franquiciados.
+            Cada máquina Restauración Láser sale de fábrica con nuestras especificaciones y presets.
+            {FRANCHISES_ENABLED &&
+              " La misma tecnología que operamos en nuestras sedes es la que reciben nuestros franquiciados."}
           </p>
         </Container>
       </section>
@@ -124,17 +125,19 @@ export default function TecnologiaPage() {
         </Container>
       </section>
 
-      <section className="py-24">
-        <Container className="flex flex-col items-center gap-6 text-center">
-          <h2 className="max-w-xl text-3xl font-bold sm:text-4xl">
-            Esta misma tecnología puede ser el corazón de tu propio negocio
-          </h2>
-          <p className="max-w-lg text-text/70">
-            Cada franquiciado recibe un equipo de marca propia Restauración Láser, no un import genérico.
-          </p>
-          <ButtonLink href="/franquicias">Ver oportunidad de franquicia</ButtonLink>
-        </Container>
-      </section>
+      {FRANCHISES_ENABLED && (
+        <section className="py-24">
+          <Container className="flex flex-col items-center gap-6 text-center">
+            <h2 className="max-w-xl text-3xl font-bold sm:text-4xl">
+              Esta misma tecnología puede ser el corazón de tu propio negocio
+            </h2>
+            <p className="max-w-lg text-text/70">
+              Cada franquiciado recibe un equipo de marca propia Restauración Láser, no un import genérico.
+            </p>
+            <ButtonLink href="/franquicias">Ver oportunidad de franquicia</ButtonLink>
+          </Container>
+        </section>
+      )}
     </>
   );
 }

@@ -2,8 +2,13 @@ import { NextResponse } from "next/server";
 import { franchiseApplicationSchema } from "@/lib/validation";
 import { getResendClient, getFromEmail, getContactToEmail } from "@/lib/resend";
 import { getAvailableTerritories } from "@/lib/content";
+import { FRANCHISES_ENABLED } from "@/lib/site-config";
 
 export async function POST(request: Request) {
+  if (!FRANCHISES_ENABLED) {
+    return NextResponse.json({ error: "No disponible." }, { status: 404 });
+  }
+
   let body: unknown;
   try {
     body = await request.json();
