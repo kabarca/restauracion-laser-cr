@@ -1,4 +1,5 @@
 import { Hero } from "@/components/home/Hero";
+import { MachinesForSale } from "@/components/home/MachinesForSale";
 import { StatsBar } from "@/components/home/StatsBar";
 import { ValueProps } from "@/components/home/ValueProps";
 import { ServicesTeaser } from "@/components/home/ServicesTeaser";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <StatsBar />
+      <MachinesForSale />
       <ValueProps />
       <ServicesTeaser />
       <HowItWorks />

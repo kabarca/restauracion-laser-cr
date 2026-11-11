@@ -9,8 +9,14 @@ export function Hero() {
   return (
     <section className="relative isolate min-h-screen w-full overflow-hidden bg-bg">
       <div className="grid min-h-screen lg:grid-cols-2">
-        <div className="flex flex-col justify-center gap-8 px-6 pb-16 pt-32 sm:px-8 lg:px-12 lg:pb-0 lg:pt-0">
+        <div className="flex flex-col justify-center gap-8 px-6 pb-16 pt-44 sm:px-8 lg:px-12 lg:pb-0 lg:pt-24">
           <div className="flex flex-col gap-6">
+            <div className="flex w-fit flex-col gap-1 rounded-brand bg-accent px-6 py-4 text-surface shadow-lg shadow-accent/30">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-surface/80">Ya disponibles</span>
+              <span className="font-display text-3xl font-extrabold uppercase leading-none sm:text-4xl">
+                Máquinas a la venta
+              </span>
+            </div>
             <span className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
               Limpieza láser · Costa Rica &amp; Latinoamérica
             </span>
@@ -27,8 +33,8 @@ export function Hero() {
             <WhatsAppButton message="Hola, quiero más información sobre los servicios de limpieza láser.">
               Hablar por WhatsApp
             </WhatsAppButton>
-            <ButtonLink href="/tecnologia" variant="outline">
-              Conocer la tecnología
+            <ButtonLink href="#maquinas-a-la-venta" variant="secondary" className="px-8 py-4 text-base font-bold">
+              Ver máquinas a la venta ↓
             </ButtonLink>
           </div>
         </div>
