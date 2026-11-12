@@ -4,10 +4,12 @@ import { WhatsAppButton } from "@/components/whatsapp/WhatsAppButton";
 import { ImagePlaceholder } from "@/components/media/ImagePlaceholder";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
+const POWER_OPTIONS = ["120W", "300W", "500W"];
+
 const HIGHLIGHTS = [
   "Equipo de marca propia Restauración Láser",
   "Sin químicos ni abrasivos",
-  "Consultá disponibilidad y precio por WhatsApp",
+  "Consultá cuál potencia te conviene, disponibilidad y precio por WhatsApp",
 ];
 
 export function MachinesForSale() {
@@ -28,9 +30,20 @@ export function MachinesForSale() {
                 Llevá la limpieza láser a tu propio negocio
               </h2>
               <p className="max-w-xl text-lg text-text/70">
-                Nuestras máquinas de limpieza láser de 300W, las mismas que usamos en cada proyecto, ahora están
-                disponibles para la venta.
+                Nuestras máquinas de limpieza láser, las mismas que usamos en cada proyecto, ahora están
+                disponibles para la venta en tres potencias.
               </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="text-sm font-semibold uppercase tracking-wide text-text/60">Potencias:</span>
+                {POWER_OPTIONS.map((power) => (
+                  <span
+                    key={power}
+                    className="rounded-brand border-2 border-accent px-5 py-2 font-display text-2xl font-extrabold text-accent"
+                  >
+                    {power}
+                  </span>
+                ))}
+              </div>
               <ul className="flex flex-col gap-2 text-text/80">
                 {HIGHLIGHTS.map((item) => (
                   <li key={item} className="flex gap-3">
